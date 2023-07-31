@@ -26,7 +26,7 @@ void Enemy::Attack() const {
 class Boss : public Enemy {
 public:
     Boss(int multiplier = 3);
-    virtual ~Boss();
+    virtual ~Boss();                    //Any class with a virtual member should also have a virtual destructor
     void virtual Attack() const;
 
     protected:
